@@ -1,0 +1,38 @@
+CREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    CompanyID INT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50),
+    Position VARCHAR(50),
+    Salary DECIMAL(10, 2),
+    HireDate DATE,
+    CONSTRAINT FK_CompanyID_Employee FOREIGN KEY (CompanyID) REFERENCES Company(CompanyID)
+);
+INSERT INTO Employee (EmployeeID, CompanyID, FirstName, LastName, Department, Position, Salary, HireDate)
+VALUES
+    (1, 1, 'John', 'Doe', 'Finance', 'Financial Analyst', 60000.00, '2020-01-15'),
+    (2, 1, 'Jane', 'Smith', 'Human Resources', 'HR Manager', 70000.00, '2019-08-20'),
+    (3, 1, 'Michael', 'Johnson', 'Sales', 'Sales Representative', 55000.00, '2020-03-10'),
+    (4, 1, 'Emily', 'Brown', 'Marketing', 'Marketing Specialist', 58000.00, '2018-12-05'),
+    (5, 1, 'Jessica', 'Lee', 'Customer Service', 'Customer Support Agent', 50000.00, '2021-02-28'),
+    (6, 1, 'William', 'Garcia', 'Finance', 'Accountant', 65000.00, '2019-10-15'),
+    (7, 1, 'Sophia', 'Martinez', 'Human Resources', 'HR Assistant', 45000.00, '2020-07-01'),
+    (8, 1, 'Daniel', 'Lopez', 'Sales', 'Sales Manager', 75000.00, '2017-05-20'),
+    (9, 1, 'Olivia', 'Hernandez', 'Marketing', 'Marketing Manager', 80000.00, '2018-02-10'),
+    (10, 1, 'Alexander', 'Young', 'Customer Service', 'Customer Service Manager', 70000.00, '2019-09-15'),
+    (11, 1, 'Ava', 'King', 'Finance', 'Financial Controller', 85000.00, '2016-11-30'),
+    (12, 1, 'Noah', 'Wright', 'Human Resources', 'Recruiter', 60000.00, '2020-04-25'),
+    (13, 1, 'Mia', 'Adams', 'Sales', 'Sales Associate', 52000.00, '2020-01-10'),
+    (14, 1, 'James', 'Scott', 'Marketing', 'Marketing Assistant', 48000.00, '2019-08-15'),
+    (15, 1, 'Emma', 'Nguyen', 'Customer Service', 'Customer Support Specialist', 52000.00, '2017-12-20'),
+    (16, 1, 'Benjamin', 'Kim', 'Finance', 'Financial Analyst', 60000.00, '2018-06-10'),
+    (17, 1, 'Isabella', 'Ramos', 'Human Resources', 'HR Coordinator', 48000.00, '2019-03-05'),
+    (18, 1, 'Ethan', 'Hall', 'Sales', 'Sales Representative', 55000.00, '2021-01-15'),
+    (19, 1, 'Charlotte', 'Torres', 'Marketing', 'Marketing Specialist', 58000.00, '2019-10-20'),
+    (20, 1, 'Amelia', 'Collins', 'Customer Service', 'Customer Support Agent', 50000.00, '2018-07-10'),
+    (21, 1, 'Jacob', 'Chavez', 'Finance', 'Accountant', 65000.00, '2020-09-25'),
+    (22, 1, 'Liam', 'Luna', 'Human Resources', 'HR Assistant', 45000.00, '2019-06-15'),
+    (23, 1, 'Avery', 'Guerrero', 'Sales', 'Sales Manager', 75000.00, '2018-03-20'),
+    (24, 1, 'Evelyn', 'Burke', 'Marketing', 'Marketing Manager', 80000.00, '2017-10-05'),
+    (25, 1, 'Michaela', 'Ortega', 'Customer Service', 'Customer Service Manager', 70000.00, '2019-12-15');
