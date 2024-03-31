@@ -1,0 +1,123 @@
+CREATE TABLE CorporateGovernance (
+    GovernanceID INT PRIMARY KEY,
+    CompanyID INT,
+    BoardComposition VARCHAR(255),
+    ExecutiveCompensation DECIMAL(20, 2),
+    ShareholderRights VARCHAR(255),
+    ComplianceInfo VARCHAR(255),
+    CONSTRAINT FK_CompanyID_Governance FOREIGN KEY (CompanyID) REFERENCES Company(CompanyID)
+);
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (1, 1, 'Diverse board with expertise in technology and finance', 2500000.00, 'Equal voting rights for all shareholders', 'Regular audits conducted to ensure compliance with legal regulations'),
+    (2, 2, 'Board composed of industry experts and experienced executives', 3000000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry standards and regulatory requirements'),
+    (3, 3, 'Board with a mix of finance, legal, and industry experts', 2800000.00, 'Transparent disclosure of financial information', 'Regular compliance reviews by external auditors'),
+    (4, 4, 'Independent board members with diverse backgrounds', 2600000.00, 'Shareholder approval required for major transactions', 'Compliance with SEC regulations and corporate governance guidelines'),
+    (5, 5, 'Board consisting of industry veterans and academic leaders', 2700000.00, 'Protection of minority shareholder rights', 'Regular reporting on compliance initiatives and regulatory changes'),
+    (6, 6, 'Diverse board representing various sectors of retail industry', 2900000.00, 'Equal treatment of all shareholders', 'Compliance with industry-specific regulations and consumer protection laws'),
+    (7, 7, 'Experienced board with expertise in healthcare management', 2800000.00, 'Shareholders have right to propose agenda items for meetings', 'Regular compliance training for employees and executives'),
+    (8, 8, 'Board with backgrounds in manufacturing, finance, and legal', 2700000.00, 'Transparent reporting on executive compensation', 'Compliance with labor laws and regulations related to employee rights'),
+    (9, 9, 'Board comprised of finance professionals and industry experts', 2600000.00, 'Shareholder approval required for significant changes in corporate structure', 'Regular reviews of compliance policies and procedures'),
+    (10, 10, 'Diverse board with international experience in technology sector', 2800000.00, 'Protection of minority shareholder rights', 'Regular audits to ensure compliance with data protection laws and cybersecurity regulations'),
+    (11, 11, 'Board with expertise in retail operations and supply chain management', 2900000.00, 'Shareholders have voting rights on major corporate decisions', 'Compliance with environmental regulations and sustainability standards'),
+    (12, 12, 'Experienced board with knowledge in healthcare regulations and finance', 2700000.00, 'Equal treatment of all shareholders', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (13, 13, 'Board comprising industry consultants and financial analysts', 2600000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements'),
+    (14, 14, 'Diverse board with expertise in technology innovation and finance', 2800000.00, 'Protection of minority shareholder rights', 'Regular audits conducted to ensure compliance with accounting standards and financial reporting requirements'),
+    (15, 15, 'Board with experience in manufacturing operations and finance management', 2700000.00, 'Shareholder approval required for significant changes in corporate strategy', 'Compliance with labor laws and workplace safety regulations');
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (16, 16, 'Board composed of industry veterans and financial analysts', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by external agencies'),
+    (17, 17, 'Diverse board with expertise in technology and marketing', 2900000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry regulations and ethical standards'),
+    (18, 18, 'Board consisting of finance professionals and legal experts', 3000000.00, 'Transparent disclosure of financial information', 'Regular compliance checks conducted by internal audit team'),
+    (19, 19, 'Experienced board with backgrounds in healthcare management', 2800000.00, 'Protection of minority shareholder rights', 'Compliance with HIPAA regulations and healthcare industry standards'),
+    (20, 20, 'Board with expertise in retail operations and consumer behavior', 2700000.00, 'Equal treatment of all shareholders', 'Regular compliance training for employees and executives'),
+    (21, 21, 'Board comprising industry experts and environmental activists', 2600000.00, 'Shareholder approval required for major transactions', 'Compliance with environmental protection laws and sustainability initiatives'),
+    (22, 22, 'Experienced board with knowledge in finance and international trade', 2900000.00, 'Transparent reporting on executive compensation', 'Compliance with anti-corruption laws and regulations'),
+    (23, 23, 'Diverse board representing various sectors of the economy', 2800000.00, 'Shareholders have right to propose agenda items for meetings', 'Regular compliance audits conducted by independent firms'),
+    (24, 24, 'Board with backgrounds in technology innovation and entrepreneurship', 2700000.00, 'Protection of minority shareholder rights', 'Compliance with data privacy regulations and cybersecurity best practices'),
+    (25, 25, 'Board with expertise in manufacturing operations and supply chain logistics', 3000000.00, 'Equal treatment of all shareholders', 'Compliance with international trade laws and regulations'),
+    (26, 26, 'Experienced board with knowledge in financial management and risk assessment', 2800000.00, 'Shareholder approval required for significant changes in corporate structure', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (27, 27, 'Board comprising industry veterans and technology entrepreneurs', 2700000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements'),
+    (28, 28, 'Diverse board with expertise in finance, marketing, and operations', 2600000.00, 'Protection of minority shareholder rights', 'Regular audits conducted to ensure compliance with accounting standards and financial reporting requirements'),
+    (29, 29, 'Board with experience in healthcare management and regulatory affairs', 2900000.00, 'Shareholder approval required for significant changes in corporate strategy', 'Compliance with FDA regulations and pharmaceutical industry standards'),
+    (30, 30, 'Experienced board with knowledge in technology trends and market analysis', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance checks conducted by internal audit team');
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (31, 31, 'Board composed of industry veterans and financial analysts', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by external agencies'),
+    (32, 32, 'Diverse board with expertise in technology and marketing', 2900000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry regulations and ethical standards'),
+    (33, 33, 'Board consisting of finance professionals and legal experts', 3000000.00, 'Transparent disclosure of financial information', 'Regular compliance checks conducted by internal audit team'),
+    (34, 34, 'Experienced board with backgrounds in healthcare management', 2800000.00, 'Protection of minority shareholder rights', 'Compliance with HIPAA regulations and healthcare industry standards'),
+    (35, 35, 'Board with expertise in retail operations and consumer behavior', 2700000.00, 'Equal treatment of all shareholders', 'Regular compliance training for employees and executives'),
+    (36, 36, 'Board comprising industry experts and environmental activists', 2600000.00, 'Shareholder approval required for major transactions', 'Compliance with environmental protection laws and sustainability initiatives'),
+    (37, 37, 'Experienced board with knowledge in finance and international trade', 2900000.00, 'Transparent reporting on executive compensation', 'Compliance with anti-corruption laws and regulations'),
+    (38, 38, 'Diverse board representing various sectors of the economy', 2800000.00, 'Shareholders have right to propose agenda items for meetings', 'Regular compliance audits conducted by independent firms'),
+    (39, 39, 'Board with backgrounds in technology innovation and entrepreneurship', 2700000.00, 'Protection of minority shareholder rights', 'Compliance with data privacy regulations and cybersecurity best practices'),
+    (40, 40, 'Board with expertise in manufacturing operations and supply chain logistics', 3000000.00, 'Equal treatment of all shareholders', 'Compliance with international trade laws and regulations'),
+    (41, 41, 'Experienced board with knowledge in financial management and risk assessment', 2800000.00, 'Shareholder approval required for significant changes in corporate structure', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (42, 42, 'Board comprising industry veterans and technology entrepreneurs', 2700000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements'),
+    (43, 43, 'Diverse board with expertise in finance, marketing, and operations', 2600000.00, 'Protection of minority shareholder rights', 'Regular audits conducted to ensure compliance with accounting standards and financial reporting requirements'),
+    (44, 44, 'Board with experience in healthcare management and regulatory affairs', 2900000.00, 'Shareholder approval required for significant changes in corporate strategy', 'Compliance with FDA regulations and pharmaceutical industry standards'),
+    (45, 45, 'Experienced board with knowledge in technology trends and market analysis', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance checks conducted by internal audit team');
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (46, 46, 'Board composed of industry veterans and legal experts', 2700000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by external agencies'),
+    (47, 47, 'Diverse board with expertise in finance and international markets', 2800000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry regulations and ethical standards'),
+    (48, 48, 'Board consisting of finance professionals and corporate strategists', 2900000.00, 'Transparent disclosure of financial information', 'Regular compliance checks conducted by internal audit team'),
+    (49, 49, 'Experienced board with backgrounds in retail management and customer service', 2800000.00, 'Protection of minority shareholder rights', 'Compliance with industry regulations and consumer protection laws'),
+    (50, 50, 'Board with expertise in technology innovation and product development', 3000000.00, 'Equal treatment of all shareholders', 'Regular compliance training for employees and executives'),
+    (51, 51, 'Board comprising industry experts and environmental activists', 2900000.00, 'Shareholder approval required for major transactions', 'Compliance with environmental protection laws and sustainability initiatives'),
+    (52, 52, 'Experienced board with knowledge in finance and risk management', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by independent firms'),
+    (53, 53, 'Diverse board representing various sectors of the economy', 2700000.00, 'Shareholders have right to propose agenda items for meetings', 'Compliance with anti-corruption laws and regulations'),
+    (54, 54, 'Board with backgrounds in healthcare management and regulatory affairs', 2900000.00, 'Protection of minority shareholder rights', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (55, 55, 'Board with expertise in technology trends and market analysis', 2800000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements'),
+    (56, 56, 'Experienced board with knowledge in finance and marketing', 2700000.00, 'Equal treatment of all shareholders', 'Regular audits conducted to ensure compliance with accounting standards and financial reporting requirements'),
+    (57, 57, 'Board comprising industry veterans and technology entrepreneurs', 3000000.00, 'Shareholder approval required for significant changes in corporate strategy', 'Compliance with industry-specific regulations and reporting requirements'),
+    (58, 58, 'Diverse board with expertise in finance, marketing, and operations', 2900000.00, 'Protection of minority shareholder rights', 'Regular compliance audits conducted by external agencies'),
+    (59, 59, 'Board with experience in healthcare management and regulatory affairs', 2800000.00, 'Equal voting rights for all shareholders', 'Compliance with FDA regulations and healthcare industry standards'),
+    (60, 60, 'Experienced board with knowledge in technology innovation and entrepreneurship', 2700000.00, 'Transparent reporting on executive compensation', 'Compliance with data privacy regulations and cybersecurity best practices');
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (61, 61, 'Board composed of industry veterans and legal experts', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by external agencies'),
+    (62, 62, 'Diverse board with expertise in finance and international markets', 2900000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry regulations and ethical standards'),
+    (63, 63, 'Board consisting of finance professionals and corporate strategists', 3000000.00, 'Transparent disclosure of financial information', 'Regular compliance checks conducted by internal audit team'),
+    (64, 64, 'Experienced board with backgrounds in retail management and customer service', 2900000.00, 'Protection of minority shareholder rights', 'Compliance with industry regulations and consumer protection laws'),
+    (65, 65, 'Board with expertise in technology innovation and product development', 3100000.00, 'Equal treatment of all shareholders', 'Regular compliance training for employees and executives'),
+    (66, 66, 'Board comprising industry experts and environmental activists', 3000000.00, 'Shareholder approval required for major transactions', 'Compliance with environmental protection laws and sustainability initiatives'),
+    (67, 67, 'Experienced board with knowledge in finance and risk management', 2900000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by independent firms'),
+    (68, 68, 'Diverse board representing various sectors of the economy', 2800000.00, 'Shareholders have right to propose agenda items for meetings', 'Compliance with anti-corruption laws and regulations'),
+    (69, 69, 'Board with backgrounds in healthcare management and regulatory affairs', 3000000.00, 'Protection of minority shareholder rights', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (70, 70, 'Board with expertise in technology trends and market analysis', 2900000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements'),
+    (71, 71, 'Experienced board with knowledge in finance and marketing', 2800000.00, 'Equal treatment of all shareholders', 'Regular audits conducted to ensure compliance with accounting standards and financial reporting requirements'),
+    (72, 72, 'Board comprising industry veterans and technology entrepreneurs', 3100000.00, 'Shareholder approval required for significant changes in corporate strategy', 'Compliance with industry-specific regulations and reporting requirements'),
+    (73, 73, 'Diverse board with expertise in finance, marketing, and operations', 3000000.00, 'Protection of minority shareholder rights', 'Regular compliance audits conducted by external agencies'),
+    (74, 74, 'Board with experience in healthcare management and regulatory affairs', 2900000.00, 'Equal voting rights for all shareholders', 'Compliance with FDA regulations and healthcare industry standards'),
+    (75, 75, 'Experienced board with knowledge in technology innovation and entrepreneurship', 2800000.00, 'Transparent reporting on executive compensation', 'Compliance with data privacy regulations and cybersecurity best practices');
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (76, 76, 'Board composed of industry veterans and legal experts', 2800000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by external agencies'),
+    (77, 77, 'Diverse board with expertise in finance and international markets', 2900000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry regulations and ethical standards'),
+    (78, 78, 'Board consisting of finance professionals and corporate strategists', 3000000.00, 'Transparent disclosure of financial information', 'Regular compliance checks conducted by internal audit team'),
+    (79, 79, 'Experienced board with backgrounds in retail management and customer service', 2900000.00, 'Protection of minority shareholder rights', 'Compliance with industry regulations and consumer protection laws'),
+    (80, 80, 'Board with expertise in technology innovation and product development', 3100000.00, 'Equal treatment of all shareholders', 'Regular compliance training for employees and executives'),
+    (81, 81, 'Board comprising industry experts and environmental activists', 3000000.00, 'Shareholder approval required for major transactions', 'Compliance with environmental protection laws and sustainability initiatives'),
+    (82, 82, 'Experienced board with knowledge in finance and risk management', 2900000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by independent firms'),
+    (83, 83, 'Diverse board representing various sectors of the economy', 2800000.00, 'Shareholders have right to propose agenda items for meetings', 'Compliance with anti-corruption laws and regulations'),
+    (84, 84, 'Board with backgrounds in healthcare management and regulatory affairs', 3000000.00, 'Protection of minority shareholder rights', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (85, 85, 'Board with expertise in technology trends and market analysis', 2900000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements'),
+    (86, 86, 'Experienced board with knowledge in finance and marketing', 2800000.00, 'Equal treatment of all shareholders', 'Regular audits conducted to ensure compliance with accounting standards and financial reporting requirements'),
+    (87, 87, 'Board comprising industry veterans and technology entrepreneurs', 3100000.00, 'Shareholder approval required for significant changes in corporate strategy', 'Compliance with industry-specific regulations and reporting requirements'),
+    (88, 88, 'Diverse board with expertise in finance, marketing, and operations', 3000000.00, 'Protection of minority shareholder rights', 'Regular compliance audits conducted by external agencies'),
+    (89, 89, 'Board with experience in healthcare management and regulatory affairs', 2900000.00, 'Equal voting rights for all shareholders', 'Compliance with FDA regulations and healthcare industry standards'),
+    (90, 90, 'Experienced board with knowledge in technology innovation and entrepreneurship', 2800000.00, 'Transparent reporting on executive compensation', 'Compliance with data privacy regulations and cybersecurity best practices');
+INSERT INTO CorporateGovernance (GovernanceID, CompanyID, BoardComposition, ExecutiveCompensation, ShareholderRights, ComplianceInfo)
+VALUES
+    (91, 91, 'Board composed of industry veterans and legal experts', 3200000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by external agencies'),
+    (92, 92, 'Diverse board with expertise in finance and international markets', 3300000.00, 'Shareholder voting rights in major decisions', 'Compliance with industry regulations and ethical standards'),
+    (93, 93, 'Board consisting of finance professionals and corporate strategists', 3400000.00, 'Transparent disclosure of financial information', 'Regular compliance checks conducted by internal audit team'),
+    (94, 94, 'Experienced board with backgrounds in retail management and customer service', 3300000.00, 'Protection of minority shareholder rights', 'Compliance with industry regulations and consumer protection laws'),
+    (95, 95, 'Board with expertise in technology innovation and product development', 3500000.00, 'Equal treatment of all shareholders', 'Regular compliance training for employees and executives'),
+    (96, 96, 'Board comprising industry experts and environmental activists', 3400000.00, 'Shareholder approval required for major transactions', 'Compliance with environmental protection laws and sustainability initiatives'),
+    (97, 97, 'Experienced board with knowledge in finance and risk management', 3300000.00, 'Equal voting rights for all shareholders', 'Regular compliance audits conducted by independent firms'),
+    (98, 98, 'Diverse board representing various sectors of the economy', 3200000.00, 'Shareholders have right to propose agenda items for meetings', 'Compliance with anti-corruption laws and regulations'),
+    (99, 99, 'Board with backgrounds in healthcare management and regulatory affairs', 3400000.00, 'Protection of minority shareholder rights', 'Regular compliance reviews conducted by legal and regulatory affairs team'),
+    (100, 100, 'Board with expertise in technology trends and market analysis', 3300000.00, 'Transparent reporting on executive compensation', 'Compliance with industry-specific regulations and reporting requirements');
